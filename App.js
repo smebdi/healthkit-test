@@ -141,7 +141,7 @@ export default class App extends Component {
           else console.log('sleep data: ', result);
         });
 
-        AppleHealthKit.getHeightSamples(options, (err, result) => {
+        AppleHealthKit.getLatestHeight(options, (err, result) => {
           if (err) this._handleHealthkitError('getting height', err);
           else console.log('height: ', result);
         });
